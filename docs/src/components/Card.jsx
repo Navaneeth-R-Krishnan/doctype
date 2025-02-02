@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 function Card({data, reference}) {
   return (
-    <motion.div drag dragConstraints = {reference} className=" relative w-60 h-72 flex-shrink-0 rounded-[45px] bg-zinc-900 text-white px-8 py-10 overflow-hidden">
+    <motion.div drag dragConstraints = {reference} whileDrag= {{scale: 1.3}}className=" relative w-60 h-72 flex-shrink-0 rounded-[45px] bg-zinc-900 text-white px-8 py-10 overflow-hidden">
         <FaRegFileAlt/>
         <p className="text-lg leading-tight mt-5 font-semibold">{data.desc}</p>
         <div className="footer absolute bottom-0 w-full left-0">
